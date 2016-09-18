@@ -1,0 +1,12 @@
+关于kali安装过程
+  *首先在fpt下载VirtualBox-5.0.26-108824-Win.exe该版本的虚拟机，以及kali-linux-2.0-amd64.iso镜像（rolling版本为2016.2）
+  *安装虚拟机，注意在配置GRN时不要选择手动，否则会导致启动时无法找到正确的引导项而无法启动
+  *安装增强功能
+    *安装完成后进行替换源操作，如果想用校内源（ftp中可以找到相应源文件），则先将/etc/hosts文件中添加一条DNS映射记录，再更改或替换/etc/apt/sources.list文件中的内容
+    *执行：apt-get update && apt-get install linux-headers-XXX (XXX为当前linux版本，可通过命令uname -a获取)
+    *点击“安装增强功能”后弹出安装镜像后，执行：bash VBoxLinuxAdditions.run进行安装。若该步报错通常情况是上一条安装内核文件错误，进行修改即可
+      *rolling版本安装有所不同：此处无需上级步骤，而是执行apt-get install open-vm-tools-desktop fuse以安装open-vm-tools。
+    *reboot重启  
+  *共享文件夹
+    *
+    
