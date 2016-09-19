@@ -1,0 +1,19 @@
+*介绍漏洞及其特性
+
+*介绍CVSS漏洞评分系统，包括起源、应用、发展，以及不同评分系统的对比
+
+*介绍其所涉及到的漏洞评分依据，评分标准
+	**列举评分项
+	**评分分类
+	**计算公式
+*举例分别介绍低、中、高评级漏洞
+	**简要列举说明漏洞
+	**利用在线评分计算
+		CVSS 2.0：
+https://nvd.nist.gov/cvss.cfm?version=2&name=360_HTTPS_MITM_Vul&vector=(AV:N/AC:M/Au:N/C:C/I:C/A:C)#score
+		CVSS 3.0：
+http://www.first.org/cvss/calculator/3.0
+	**解释3.0相对于2.0的改进与优化
+	
+*列举有影响力的事例介绍CVSS的必要性
+*拓展与展望：（完成上述工作过程中添加）
